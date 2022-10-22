@@ -3,7 +3,58 @@
 let cart = {};
 let orderTotal = 0;
 
+// function callback() {
+//   const item = button.id;
+
+//   fetch(`/update-cart.json`)
+//     .then((response) => response.json())
+//     .then((result) => {
+//       cart = result.cart;
+//       orderTotal = result.total;
+//     });
+//   displayCart(cart);
+//   displayOrderTotal(orderTotal);
+// }
+
+// const callback = () => {
+//   const item = button.id;
+
+//   fetch(`/update-cart.json`)
+//     .then((response) => response.json())
+//     .then((result) => {
+//       cart = result.cart;
+//       orderTotal = result.total;
+//     });
+//   displayCart(cart);
+//   displayOrderTotal(orderTotal);
+// };
+
+// Lily:
+// for (const button of addButtons) {
+//   button.addEventListener('click', 
+//     function callback() {
+//       const item = button.id;
+
+//       fetch(`/update-cart.json`)
+//         .then((response) => response.json())
+//         .then((result) => {
+//           cart = result.cart;
+//           orderTotal = result.total;
+//         });
+//       displayCart(cart);
+//       displayOrderTotal(orderTotal);
+//   });
+// }
+
+
+
+
+
 const addButtons = document.querySelectorAll('.add-to-order');
+// for (const button of addButtons) {
+//   button.addEventListener('click', callback);
+//   console.dir(button);
+// }
 for (const button of addButtons) {
   button.addEventListener('click', () => {
     const item = button.id;
